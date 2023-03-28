@@ -1,0 +1,78 @@
+/* 공통소스 */
+
+
+.blind{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  margin: -1px;
+}
+
+.thumb-bd{
+  position: relative;
+  display: block;
+}
+.thumb-bd::after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #000;
+  content: '';
+  opacity: 0.1;
+}
+
+/* 상속하는 모든애들을 다 넣어줌, 연결해서 쓰면됨 */
+.sc-news .group-media .btn.prev::before,
+.sc-living .group-category .btn.prev::before,
+.sc-living .group-category .btn.next::before,
+.footer .notice-area .link-notice-all::after,
+.btn-more-wrap .btn-more .ico-more::before,
+.contents .list3 .theme-title .title::after,
+.contents .list3 .media-thumb .play::before,
+.sc-living .group-title .info-area .btn-setting::before,
+.sc-login .sub-area .link-join::before,
+.sc-login .sub-area .link-find::before,
+.sc-login .sub-area .link-id::before,
+.sc-news .group-title .set-area .ic-set::before,
+.sc-news .group-title .set-area .ic-tile::before,
+.sc-news .group-title .set-area .ic-list::before,
+.sc-news .group-title .sort-area .black-sort::before,
+.sc-news .group-title .link-title::after,
+.sc-news .group-title .link-title::before,
+.sc-news .group-issue .issue-area .link-media::after,
+.gnb .group-weather .degree-red::before,
+.gnb .group-nav .btn-more::after,
+.gnb .group-nav .nav-item .tv::before,
+.gnb .group-nav .nav-item .shoplive::before,
+.sc-sidenews .nav-wrap .btn-nav::before,
+.sc-login .link-login::before,
+.gnb .group-nav .nav-item .ic-mail::before,
+.header .service-area a::after,
+.header .search-area .btn-submit::before,
+.header .logo-area h1 a::before{
+  background-image: url(../images/sp-bg.png);
+  background-repeat: no-repeat;
+  background-size: 442px;
+}
+
+.gnb .group-weather .weather-area::before{
+  background-image: url(../images/wt-bg.png);
+  background-repeat: no-repeat;
+  background-size: 215px;
+}
+
+.sc-shop .group-plusdeal .thumb-box:nth-child(2)::before,
+.sc-shop .group-plusdeal .thumb-box .ico-one-plus::before,
+.sc-shop .group-plusdeal .title-area .link-logo::before,
+.sc-shop .btn-box .next::before,
+.sc-shop .btn-box .prev::before,
+.sc-shop .shop-header .link-shop::after,
+.sc-shop .shop-header .link-shop::before{
+  background-image: url(../images/sp-bg2.png);
+  background-repeat: no-repeat;
+  background-size: 129px;
+}
