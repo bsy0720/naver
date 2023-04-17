@@ -396,6 +396,13 @@
   width: 364px;
   height: 180px;
 }
+.contents .list1 .food-area .foodImg img{
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+.contents .list1 .food-area .foodImg:hover img{
+  transform: scale(1.1);
+}
 .contents .list1 .food-area .foodImg .thumb_dim{
   position: absolute;
   top: 0;
